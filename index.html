@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>哥们网H5手游平台</title>
+  	<meta content="yes" name="apple-mobile-web-app-capable">
+  	<meta content="yes" name="apple-touch-fullscreen">
+  	<meta content="telephone=no" name="format-detection" />
+  	<script type="text/javascript" src="js/pcTest.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/common.css">
+  	<link rel="stylesheet" href="css/index.css"/>
+  	<script type="text/javascript" src="js/flexible.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="flexBar">
+			<img class="tLogo" src="images/logo.png" alt="哥们网H5手游">
+			<aside class="header-aside">
+	            <div class="aside-item">
+	                <em class="guide-icon-nav">
+	                    <i></i>
+	                    <i></i>
+	                    <i></i>
+	                </em>
+	            </div>
+	        </aside>
+			
+		</div><!--end flexNav-->
+		<div class="mmask">
+		    <div class="leftmeun">
+		    	<!--未登录-->
+		        <div class="toplogin" style="display: block"><a href="/login/"><i></i></a><p><a href="/login/">登录</a></p></div>
+		        <!--end -->
+		        <!--已登录-->
+		        <div class="toplogon" style="display: none">
+		        	<a href="javascript:;"><i></i></a>
+		        	<p>15521042144</p>
+					<p class="bindIcon"><em class="bind"></em><em class="bind"></em><em class="bind"></em></p>
+					<!--若已绑定手机号跟实名认证则em标签加个class=‘bind’-->
+		        </div>
+		        <!--end -->
+		        <ul class="cf side-nav">
+		            <li><a href="javascript:;">充值中心  <i><img src="images/i01.png"></i><span></span></a></li>
+		            <li><a href="">我玩过的  <i><img src="images/i02.png"></i><span></span></a></li>
+		            <li><a href="reservation.html">我的预约  <i><img src="images/i03.png"></i><span></span></a></li>
+		            <li><a href="myGift.html">我的礼包  <i><img src="images/i04.png"></i><span></span></a></li>
+		            <li><a href="kf.html">联系客服 <i><img src="images/i05.png"></i><span></span></a></li>
+		        </ul>
+		    </div>
+		</div><!--end mmask-->
+		<div class="mmaskbox2" style="display: none;"></div>
+		<div class="topSlider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+				    <div class="swiper-slide"><a href=""><img src="images/topSlider1.png"></a></div>
+				    <div class="swiper-slide"><a href=""><img src="images/topSlider1.png"></a></div>
+				    <div class="swiper-slide"><a href=""><img src="images/topSlider1.png"></a></div>
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div><!--end topSlider-->
+		<ul class="menuNav">
+			<li><a href="gameLobby.html"><img src="images/iconNav01.jpg">游戏</a></li>
+			<li><a href="javascript:;"><img src="images/iconNav02.jpg">礼包</a></li>
+			<li><a href="newsGG.html"><img src="images/iconNav03.jpg">资讯</a></li>
+			<li><a href="javascript:;"><img src="images/iconNav04.jpg">充值</a></li>
+		</ul><!--end menuNav-->
+		<div class="recommend">
+			<div class="rMenu">
+				<ul>
+					<li class="on"><a href="javascript:;">每日推荐</a></li>
+					<li data-offset-top="lastPlay"><a href="javascript:;">最近玩过</a></li>
+					<li data-offset-top="hotList"><a href="javascript:;">必玩爆款</a></li>
+					<li data-offset-top="toPic"><a href="javascript:;">专题推荐</a></li>
+					<li data-offset-top="newGame"><a href="javascript:;">最新开服</a></li>
+					<li data-offset-top="news"><a href="javascript:;">游戏资讯</a></li>
+					<li data-offset-top="allGame"><a href="javascript:;">全部游戏</a></li>
+				</ul>
+				<span class="showAll"><img src="images/iconShow.jpg"></span>
+			</div>
+			<div class="rList">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+					    <div class="swiper-slide">
+							<div class="gImg gIcon">
+								<img src="images/gImg01.jpg">
+								<div class="iconCommon">
+									<span class="ic1">精品</span>
+									<span class="ic2">礼品</span>
+								</div>
+								
+							</div>
+							<h5>快乐点点消</h5>
+							<p>手指点击轻松玩，操作简单</p>
+							<a class="btnCommon" href="javascript:;">马上玩</a>
+					    </div>
+					   
+						<div class="swiper-slide">
+							<div class="gImg gIcon">
+								<img src="images/gImg01.jpg">
+								<div class="iconCommon">
+									<span class="ic3">热门</span>
+								</div>
+								
+							</div>
+							<h5>快乐点点消</h5>
+							<p>手指点击轻松玩，操作简单</p>
+							<a class="btnCommon" href="javascript:;">马上玩</a>
+					    </div>
+					    <div class="swiper-slide">
+							<div class="gImg gIcon">
+								<img src="images/gImg01.jpg">
+								
+								
+							</div>
+							<h5>快乐点点消</h5>
+							<p>手指点击轻松玩，操作简单</p>
+							<a class="btnCommon" href="javascript:;">马上玩</a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div><!--end recommend-->
+		<div class="lastPlay gl" style="display: block"><!--登录的时候显示最近玩过-->
+			<h6 class="tCommon">最近玩过</h6>
+			<div class="gameList">
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+			</div>
+			<p class="more"><a href="#">查看全部 ></a></p>
+		</div><!--end-->
+		<div class="hotList gl">
+			<h6 class="tCommon">必玩爆款</h6>
+			<div class="hotLink">
+				<a class="btnLink" href="javascript:;"><img src="images/hotImg.jpg"></a>
+				<div class="iconCommon"><span class="ic3">热门</span></div>
+				<a class="btnCommon" href="javascript:;">马上玩</a>
+			</div>
+			<div class="gameList">
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+				<div>
+					<img class="icon" src="images/iconGame.png">
+					<h6>梦道</h6>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</div>
+			</div>
+		</div><!--end hotList-->
+		<div class="toPic">
+			<h6 class="tCommon">专题推荐</h6>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="#"><img src="images/toPicImg.jpg"></a></div>
+					<div class="swiper-slide"><a href="#"><img src="images/toPicImg.jpg"></a></div>
+					<div class="swiper-slide"><a href="#"><img src="images/toPicImg.jpg"></a></div>
+				</div>
+			</div>
+		</div><!--end toPic-->
+		<div class="newGame">
+			<div class="ngTop">
+				<span class="on">最新开服</span>
+				<span>新服预告</span>
+			</div>
+			<div class="ngContent">
+				<div class="sDiv"  style="display: block">
+					<div class="ngAdd gCommon" style="display: block"><!--新服新游-->
+					<!--有内容-->
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">马上玩</a>
+								<p>已开服<span>56分钟</span></p>
+							</div>
+						</div>
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">马上玩</a>
+								<p>已开服<span>1小时</span></p>
+							</div>
+						</div>
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">马上玩</a>
+								<p>已开服<span>1天</span></p>
+							</div>
+						</div>
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">马上玩</a>
+								<p>已开服<span>1小时</span></p>
+							</div>
+						</div>
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">马上玩</a>
+								<p>已开服<span>1小时</span></p>
+							</div>
+						</div>
+						<p class="more"><a href="gameLobby.html">查看全部 ></a></p>
+					</div><!--end ngAdd 新服新游-->
+					<div class="noNewGame noCommon" style="display: none">
+						<!--新服新游没有内容时显示-->
+						<img src="images/img03.png">
+						<p>当前无新开服的游戏<br/>我们正在努力补充中</p>
+					</div>
+				</div>
+				<div class="sDiv" style="display: none">
+					<div class="ngNotice gCommon" style="display: block"><!--新服预告-->
+						<!--有内容-->
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon btnGet" href="javascript:;">已预约</a>
+								<p class="pTime"><span>10-17 10:00</span> 开服</p>
+							</div>
+						</div>
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</span></p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">立即预约</a>
+								<p class="pTime"><span>10-17 10:00</span> 开服</p>
+							</div>
+						</div>
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">立即预约</a>
+								<p class="pTime"><span>10-17 10:00</span> 开服</p>
+							</div>
+						</div>
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">立即预约</a>
+								<p class="pTime"><span>10-17 10:00</span> 开服</p>
+							</div>
+						</div>
+						<div class="game">
+							<div class="gLeft">
+								<img src="images/iconGame3.png" alt="">
+								<div>
+									<h6>开车吧主公</h6>
+									<p>36服</p>
+								</div>
+							</div>
+							<div class="gRight">
+								<a class="btnCommon" href="javascript:;">立即预约</a>
+								<p class="pTime"><span>10-17 10:00</span> 开服</p>
+							</div>
+						</div>
+						<p class="more"><a href="gameLobby.html">查看全部 ></a></p>
+					</div><!--end ngNotice 新服预告-->
+					<div class="noNewGame noCommon" style="display: none">
+						<!--新服新游没有内容时显示-->
+						<img src="images/img03.png">
+						<p>当前无新服预告<br/>我们正在努力补充中</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news">
+			<div class="top">
+				<h6 class="tCommon">游戏资讯</h6>
+			</div>
+			<div class="newsContent">
+				<ul>
+					<!--攻略加个class“sg”  公告加个class“sa”-->
+					<li><span class="s1 sg">攻略</span><a href="#">《大宗师》周末返利活动</a><span class="s2">09-22</span></li>
+					<li><span class="s1 sg">攻略</span><a href="#">《仙剑客栈》原汁原味的剑侠神魔世界</a><span class="s2">09-22</span></li>
+					<li><span class="s1 sa">公告</span><a href="#">《龙城霸业》周末活动</a><span class="s2">09-22</span></li>
+					<li><span class="s1 sg">攻略</span><a href="#">《决战魔域》9月22日版本维护公告</a><span class="s2">09-22</span></li>
+					<li><span class="s1 sa">公告</span><a href="#">《三生三世十里桃花》9月22日维护更新提示</a><span class="s2">09-22</span></li>
+
+				</ul>
+				<p class="more"><a href="newsGL.html">查看全部 ></a></p>
+			</div>
+		</div><!--end news-->
+		<div class="allGame indexAllGame">
+			<div class="top">
+				<h6 class="tCommon">全部游戏</h6>
+				
+			</div>
+			<ul class="aList">
+				<li>
+					<img src="images/iconGame4.png">
+					<div>
+						<h6><span>决战沙城</span><span class="spanJ">精品</span></h6>
+						<p class="p1">传奇类<em>|</em><strong>99.5万</strong>人在玩</p>
+						<p>十年兄弟，再战沙城！</p>
+					</div>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</li>
+				<li>
+					<img src="images/iconGame4.png">
+					<div>
+						<h6><span>决战沙城</span><span class="spanJ">精品</span><span class="spanR">热门</span></h6>
+						<p class="p1">传奇类<em>|</em><strong>99.5万</strong>人在玩</p>
+						<p>十年兄弟，再战沙城！</p>
+					</div>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</li>
+				<li>
+					<img src="images/iconGame4.png">
+					<div>
+						<h6><span>决战沙城</span><span class="spanS">删档</span><span class="spanX">限号</span></h6>
+						<p class="p1">传奇类<em>|</em><strong>99.5万</strong>人在玩</p>
+						<p>十年兄弟，再战沙城！</p>
+					</div>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</li>
+				<li>
+					<img src="images/iconGame4.png">
+					<div>
+						<h6><span>决战沙城</span><span class="spanF">封测</span></h6>
+						<p class="p1">传奇类<em>|</em><strong>99.5万</strong>人在玩</p>
+						<p>十年兄弟，再战沙城！</p>
+					</div>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</li>
+				<li>
+					<img src="images/iconGame4.png">
+					<div>
+						<h6><span>决战沙城</span></h6>
+						<p class="p1">传奇类<em>|</em><strong>99.5万</strong>人在玩</p>
+						<p>十年兄弟，再战沙城！</p>
+					</div>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</li>
+				<li>
+					<img src="images/iconGame4.png">
+					<div>
+						<h6><span>决战沙城</span></h6>
+						<p class="p1">传奇类<em>|</em><strong>99.5万</strong>人在玩</p>
+						<p>十年兄弟，再战沙城！</p>
+					</div>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</li>
+				<li>
+					<img src="images/iconGame4.png">
+					<div>
+						<h6><span>决战沙城</span></h6>
+						<p class="p1">传奇类<em>|</em><strong>99.5万</strong>人在玩</p>
+						<p>十年兄弟，再战沙城！</p>
+					</div>
+					<a class="btnCommon" href="javascript:;">马上玩</a>
+				</li>
+			</ul>
+			<p class="more"><a href="newsGL.html">查看全部 ></a></p>
+		</div>
+		<div class="footer">
+			<p><strong>客服微信公众号：哥们网手游</strong></p>
+			<p>哥们网科技有限公司  闽网文[2015]1665-032号  闽B2-20120072</p>
+			<p>闽ICP备15005922号-10  Copyright  2001-2017 G2.cn</p>
+		</div>
+		<div class="slideTop">
+			<img src="images/slideTop.jpg">
+		</div>
+		
+	</div>
+	<div class="pcEwm">
+		<img src="images/pcEwm.png">
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tap.js"></script>
+	<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

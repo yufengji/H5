@@ -1,0 +1,251 @@
+/*===================LOGIN========================*/
+html,body{
+	height:100%;
+}
+@media only screen and (min-width: 540px) {
+  body,html{background-color:#f1f1f1}
+}
+.wrap{max-width: 10rem;height:100%; margin:0 auto 0;background:#ffffff;overflow:auto;}
+.h {
+    height: 1.4rem;
+}
+.main {
+    width: 100%;
+}
+.main{width: 100%;}
+.head{width: 100%;height:0.66rem; position: relative;}
+.head h3{width:4.85rem;height:0.66rem;line-height:0.75rem;margin:0 auto; text-align: center; color:#5e5e5e; font-size:0.5rem; font-weight: normal; border-bottom:0.01rem solid #fff;}
+
+.logBox,.checkBox,.bandDiv,.regBox,.phoneCheck,.getDiv{width: 9.2rem;margin:0 auto;}
+.logBox p,.validate,.regBox p{width: 99%;height:1.12rem;margin:0 auto;}
+.logBox p.pWarn,.checkBox p.pWarn,.regBox p.pWarn{height:0.88rem;line-height:0.88rem; font-size:0.37rem;color:#ff7e00;}
+
+.logBox p.p1,.logBox p.p2,.validate p,.safeDiv p,.viDiv p,.regBox p.p1,.regBox p.p2{border:0.01rem solid #bdbdbd; margin-bottom: 0.4rem;clear:both;box-sizing:border-box;}
+.logBox p.pOn,.safeDiv p.pOn,.viDiv p.pOn,.regBox p.pOn{border:0.01rem solid #249bf3;box-shadow:0 0.02rem 0.02rem 0 rgba(15,165,255,0.3) inset;}
+
+.logBox p.pErr,.safeDiv p.pErr,.viDiv p.pErr,.regBox p.pErr{border:0.01rem solid #fb460e;box-shadow:0 0.02rem 0.02rem 0 rgba(250,70,15,0.3) inset;}
+
+
+.logBox p label,.validate p label,.safeDiv p label,.viDiv p label,.regBox p label{width:1.8rem;height:1.12rem;line-height:1.12rem; text-align: center; font-size:0.37rem; color:#666; float:left;}
+.logBox p input,.safeDiv p a,.viDiv p input,.regBox p input{width:7.2rem;height:1.12rem;padding:0 0rem ;font-size:0.37rem; background:none; outline: none; float:left;}
+
+.validate{margin-bottom: 0.22rem;}
+.validate p,.viDiv p{width: 5.53rem;float:left;}
+.validate p input,.viDiv p input{width:3.6rem;}
+.validate img{width:2.66rem;height:1.12rem;border:0.02rem solid #bdbdbd;float:right;}
+
+.msg-button{width: 2.66rem;height: 1.12rem;line-height: 1.12rem;text-align: center;display: block;float: right;color: #fff;background:#569ffb; font-size: 0.37rem;}
+
+.logBox p.pBtn,.checkBox p.pBtn,.isBand p.pBtn,.regSuc p.pBtn,.regBox p.pBtn,.phoneCheck p.pBtn,.getDiv p.pBtn{width: 9.2rem;height:1.2rem; margin:0 auto; clear:both;}
+.logBox p.pBtn a,.checkBox p.pBtn a,.isBand p.pBtn a,.regSuc p.pBtn a,.regBox p.pBtn a,.phoneCheck p.pBtn a,.getDiv p.pBtn a{width: 9.2rem;height:1.2rem; line-height:1.2rem; text-align: center; display: block; font-size: 0.48rem;color:#fff; background:#569ffb;  border-radius: 0.05rem;
+  }
+.logBox p.pBtn a:active,.checkBox p.pBtn a:active,.isBand p.pBtn a:active,.regSuc p.pBtn a:active,.regBox p.pBtn a:active,.phoneCheck p.pBtn:active,.getDiv p.pBtn a:active{
+  background:#1f82ff;
+}
+
+/*---//其他登录(2016/09/21)//---*/
+/*.otherLogin{width: 5.6rem;height:2.2rem;margin:0 auto 0.22rem;}
+.otherLogin span{height:1rem; line-height:1rem; text-align: center; font-size:0.28rem;display: block;color:#5e5e5e; background:url(img/line.gif) no-repeat center center; background-size: 6.26rem 0.06rem;}
+.otherLogin .third{ height:0.94rem;padding-left:0.4rem;}
+.otherLogin .icon3{width:0.94rem;height:0.94rem; margin:0 0.3rem; background-image:url(img/iconLogin.gif); background-size: 2.82rem 1.88rem;float:left;}
+
+.otherLogin .weixin{ background-position:0 0;}
+.otherLogin .qq{ background-position:-0.94rem 0;}
+.otherLogin .weibo{ background-position:-1.88rem 0;}
+.otherLogin .weixin:active{ background-position:0 -0.94rem;}
+.otherLogin .qq:active{ background-position:-0.94rem -0.94rem;}
+.otherLogin .weibo:active{ background-position:-1.88rem -0.94rem;}*/
+
+.otherLogin{width: 9.2rem;height:2.93rem;margin:0 auto 0.22rem;}
+.otherLogin span{height:1.33rem; line-height:1.33rem; text-align: center; font-size:0.37rem;display: block;color:#5e5e5e; background:url(img/line.gif) no-repeat center center; background-size: 9.2rem 0.08rem;}
+.otherLogin .third{ height:1.25rem;padding-left:1.8rem;}
+.otherLogin a.icon3{width:1.25rem;height:1.25rem; margin:0 0.3rem;color:#04b010; float:left; position: relative;}
+.otherLogin a.weixin{}
+.otherLogin a.qq{color:#1780d1;}
+.otherLogin a.weibo{color:#e72d19;}
+.logBox p.pCheck{height:0.42rem;}
+.logBox p.pCheck a{font-size:0.37rem;color:#249bf3;}
+.logBox p.pCheck a:active{color:#f60;}
+.logBox p.pCheck a.aReg{float:left;}
+.logBox p.pCheck a.aFor{float:right;}
+
+
+.forget,.protocol{width: 10rem;background-color: #fff; position: fixed;left: 50%;margin-left:-5rem;top: 0; z-index: 9; 
+  height:95%;
+  overflow:auto;
+-webkit-transition:all 0.5s ease;
+-webkit-transform:rotateZ(-180deg);
+-webkit-transform-origin:50% 0;
+opacity: 0;
+}
+
+.forAct,.proAct{-webkit-transform:rotateZ(0deg); opacity: 1; top: 1.4rem;}
+.proCont{ position: relative; padding-top: 1.6rem; width: 100%; height: 100%; z-index: 9; display: inline-block;}
+
+.getDiv{}
+.getDiv dl{padding-top: 0.69rem;}
+.getDiv dt{font-size:0.42rem; color:#333; font-weight: bold; margin-bottom: 0.42rem;}
+.getDiv dd{line-height:0.8rem; font-size:0.4rem;color:#666;}
+
+.pNum{padding:0.2rem 0 0.32rem 0; font-size:0.86rem;color:#333; text-align: center;}
+
+
+
+
+/*===================CHECK========================*/
+.safeDiv,.viDiv{width: 100%;height:0.88rem;margin-bottom: 0.3rem; position: relative;}
+.safeDiv{ z-index: 9;}
+.safeDiv p{height:0.88rem;background-position: 0 -2.64rem;}
+.safeDiv p a{line-height:0.84rem;font-size:0.28rem;padding-right:0.84rem; color:#a9a9a9; white-space: nowrap;  overflow:hidden;text-overflow:ellipsis; position: relative;}
+
+.safeDiv p a span{width: 0.84rem;height:0.84rem;display: block; position: absolute;top: 0;right: 0;background: url(img/i1.gif) no-repeat center center;background-size:0.14rem 0.08rem; }
+.safeDiv p.pOn a{color:#4e4e4e;}
+.safeDiv p.pOn a span{background: url(img/i2.gif) no-repeat center center;background-size:0.14rem 0.08rem;}
+
+
+.drapDiv{width:100%;border:0.02rem solid #249bf3;  background-color: #dff1ff; position: absolute;left: 0;top: 0.86rem;display: none;}
+.drapDiv a{line-height:0.6rem; color:#666; font-size:0.28rem;display: block; padding-left:1.34rem;}
+.drapDiv a:active{color:#249bf3;}
+
+.viDiv p{height:0.88rem;background-position: 0 -3.52rem;float:left;}
+.viDiv a{width:2.2rem;height:0.88rem;line-height:0.88rem; text-align: center;font-size:0.28rem;color:#fff; background-color:#30a0e2;float:right;}
+.viDiv a:active{background-color: #52b9f6;}
+
+/*===================BAND========================*/
+.head h4{position: absolute;right:0.4rem;top:0.2rem;}
+.head h4 a{display:block;font-size:0.28rem;color:#fff; }
+.head h4 a:active{color:#ff0;}
+
+.face{width: 1.12rem;height:1.12rem;padding:0.06rem; background-color: rgba(255,255,255,0.3);border-radius: 50%; position: absolute;left:50%;top:0.18rem; margin-left:-0.56rem;}
+.face img{width:1.0rem;height:1.0rem;border-radius: 50%;}
+.uName{width: 100%; line-height:0.4rem;text-align: center;font-size:0.28rem;color:#fff; position: absolute;left: 0;top: 1.30rem;}
+
+/*====================BAND css==========================*/
+.bandDiv{}
+.bandDiv dl{width: 100%; padding-top: 0.69rem;}
+.bandDiv dt{width: 100%;height:1.333rem; border-top:0.01rem solid #d9d9d9;border-bottom:0.01rem solid #d9d9d9;}
+.bandDiv dt strong{width:3.73rem;height:1.28rem;line-height:1.28rem; padding-left: 0.93rem; font-size:0.43rem;color:#353535; background: url(img/sIco.gif) no-repeat;background-size: 0.8rem 2.56rem; float:left;}
+.bandDiv dt strong.s2{background-position: 0 -1.28rem;}
+.bandDiv dt a{width: 1.2rem;height: 0.64rem;margin-top:0.32rem; background-color: #979797;float:right; border-radius:0.6rem; position: relative;
+  -webkit-transition:all 0.3s linear;
+
+}
+.bandDiv dt a span{width:0.53rem;height:0.53rem;background-color:#fff;border-radius: 50%; position: absolute;left:0.04rem;top:0.04rem;-webkit-transition:all 0.3s linear; box-shadow: 0 0 0.01rem 0.01rem rgba(150,150,150,0.5)}
+
+.bandDiv dt a.aOn{background-color: #30a0e2;}
+.bandDiv dt a.aOn span{left:0.45rem;}
+.bandDiv dd{line-height:0.44rem; font-size:0.28rem;color:#9c9c9c;padding:0.2rem;}
+
+
+/*====================REG==========================*/
+.wrap{}
+.h{ height: 1.4rem;}
+.regTab{width:100%;/*height: 1.06rem;*/ height:10%;border-bottom:0.02rem solid #e4e4e4;}
+.regTab a{width: 49.9%;height:100%;line-height:100%; color:#666; text-align: center; float:left; position: relative;}
+.regTab a i{display:block;font-size:0.58rem;line-height:0.58rem; position: absolute;left:0.66rem;top:0.37rem;}
+.regTab a var{font-size:0.51rem;position: absolute;left:1.33rem;top:.45rem;font-style:normal}
+.regTab span{width: 100%;height:0.08rem;position: absolute;left: 0;bottom: 0;}
+
+.regTab a.aOn{color:#34a1f6;}
+.regTab a.aOn span{background-color: #34a1f6;}
+
+.regBox{height:79%; position: relative; z-index: 8;}
+.regCon{width: 100%;height:100%;}
+.regDiv{width: 9.2rem;height:100%; background-color: #fff; position: absolute;left: 0;  top: 0; z-index: 2;}
+ 
+.phoneReg,.styleReg{border: none;}
+.phoneReg{
+  -webkit-transform:rotate3d(0,1,0,0deg);
+  -webkit-backface-visibility:hidden;
+}
+.styleReg{
+  -webkit-transform:rotate3d(0,1,0,180deg);
+  -webkit-backface-visibility:hidden; 
+  opacity: 0;
+}
+
+.regAct .phoneReg{
+-webkit-transform:rotate3d(0,1,0,-180deg);  
+}
+.regAct .styleReg{
+-webkit-transform:rotate3d(0,1,0,0deg); 
+opacity: 1;
+}
+
+
+
+.regBox p.pCheck{height:0.48rem;margin-bottom: 0.29rem;clear:both;}
+.regBox p.pCheck span{height:0.48rem;line-height:0.48rem;padding-left:0.48rem;font-size:0.3733rem; color:#666; background:url(img/check.gif) no-repeat;background-size: 0.4rem 0.96rem;float:left;}
+.regBox p.pCheck span.sOn{background-position: 0 -0.48rem;}
+.regBox p.pCheck a{height:0.48rem;line-height:0.48rem;font-size:0.37rem; color:#249bf3;float:left;}
+.regBox p.pBtn{margin-bottom: 0.53rem;}
+
+.pA{width: 100%;height:1.06rem; text-align: center;}
+.pA a{display:block;font-size:0.42rem;color:#249bf3;}
+.regBox p.pCheck a:active,.pA a:active{color:#f60;}
+
+.phoneCheck{padding-top: 1.33rem;}
+.phoneTxt{width: 100%;margin-bottom: 0.53rem;}
+.phoneTxt h2{line-height:1.06rem; font-size: 0.64rem; text-align: center;color:#333;}
+.phoneTxt p{font-size: 0.48rem;color:#ff9000; text-align: center;}
+.phoneCheck p.pBtn,.getDiv p.pBtn{margin-bottom: 0.53rem;}
+
+.regSuc{}
+.sucIco{width:3.12rem;height:3.17rem;margin:0 auto 0.66rem;}
+.sucTxt{}
+.sucTxt h2{color:#34a0f6;}
+.sucTxt p.pName{font-size:0.53rem;color:#333;}
+
+
+@font-face {font-family: "iconfont";
+  src: url('font/iconfont.eot'); 
+  src: url('font/iconfont.eot') format('embedded-opentype'), 
+  url('font/iconfont.woff') format('woff'), 
+  url('font/iconfont.ttf') format('truetype'),
+  url('font/iconfont.svg') format('svg'); 
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:0.32rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+}
+.icon-weibo:before { content: "\3464"; }
+.icon-weixin:before { content: "\3434"; }
+.icon-qq:before { content: "\e627"; }
+.icon-icon5:before { content: "\e668"; }
+.icon-baojingchuli:before { content: "\e9b8"; }
+.icon-bugle:before { content: "\e65d"; }
+.icon-shouji:before { content: "\e737"; }
+.icon-zhanghao00:before { content: "\e704"; }
+
+a.icon3 .iconfont{font-size:1.25rem;line-height:1.25rem; position: absolute;left: 0;top: 0;}
+.protocol h2{padding:0.4rem 0;font-size:0.48rem; text-align: center;color:#34a1f6;}
+a.proClose{width: 0.6rem; height:0.6rem; position:absolute;right:0.16rem;top:0.35rem;background: url(img/close.gif) no-repeat;background-size: 0.6rem 1.2rem; text-indent: -999rem;}
+a.proClose:active{background-position: 0 -0.6rem;}
+
+.prolScroll{width: 9.2rem; margin:0 auto;overflow:auto;height:95%;}
+.prolScroll h4,.prolScroll h5{padding:0.4rem 0; font-size:0.42rem;color:#333;}
+.prolScroll p{line-height:0.66rem; font-size:0.36rem;color:#333;}
+
+/*来自前端的制裁*/
+.isBand,.regSuc{width:100%;height:100%;padding-top: 1.2rem; position: relative;}
+.bandIco{width: 2.06rem;height:2.06rem;margin:0 auto 0.5rem; /*position: absolute;left:50%;top:1.2rem;margin-left:-1.03rem;*/border:0.08rem solid #fff5e3; border-radius: 50%;background-color: #ffba41; position: relative;}
+.bandIco span{width:0.32rem;height:1.2rem;display: block;background: url(img/la.gif) no-repeat;background-size: 0.32rem 1.2rem; position: absolute;left:50%;top:50%;margin:-0.6rem 0 0 -0.16rem;}
+.bandTxt,.sucTxt{width: 100%;margin-bottom: 0.6rem;}
+.bandTxt h2,.sucTxt h2{line-height:0.6rem;font-size:0.36rem;text-align: center;color:#333;}
+.bandTxt p,.sucTxt p{font-size:0.3rem;line-height:0.6rem;  text-align: center;color:#999;}
+
+.winImgBox .zzcs {width: 10rem;height: 100%;position: fixed;top: 0;left: 50%;margin-left:-5rem;background-color: rgba(0, 0, 0, 0.6);z-index: 1100;}
+.winImgCheck {width: 6.86666667rem;position: absolute;top: 25%;left: 50%;margin-left: -3.83333333rem;background-color: #ffffff;padding: 0.4rem; border-radius: 0.13333333rem;z-index: 1100;}
+.winImgCheck p.title {padding-bottom: 0.33333333rem;border-bottom: 1px solid #e5e5e5; overflow: hidden;}
+.winImgCheck p.title strong {float: left;font-size: 0.42666667rem; color: #57a0fb;vertical-align: middle;line-height: 0.42666667rem;}
+.winImgCheck p.title a {display: block;width: 0.50666667rem;height: 0.50666667rem;text-indent: -999em;float: right;background: url(img/close.jpg) no-repeat; background-size: 0.37333333rem 0.37333333rem;vertical-align: middle;}
+.winImgCheck .yzm {overflow: hidden;}
+.winImgCheck .yzm input {width: 4.4rem;border: 1px solid #d2d2d2;border-radius: 0.06666667rem;box-sizing: border-box; float: left; height: 0.8rem;font-size: 0.37333333rem;padding-left: 0.4rem;}
+.winImgCheck .yzm img {width: 2.2rem;height: 0.8rem;float: right; border-radius: 0.06666667rem;}
+.winImgCheck .btnSure {display: block;width: 100%;height: 0.86666667rem;text-align: center;line-height: 0.86666667rem;font-size: 0.37333333rem;color: #ffffff; margin: 0.4rem auto 0 auto;background: #57a0fb;border-radius: 0.13333333rem;}
+p.errMsg {color: #f36060;font-size: 0.32rem;margin-top: 0.26666667rem;padding-bottom: 0.13333333rem;}

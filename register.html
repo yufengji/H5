@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>哥们网H5手游平台</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css"/>
+    <script type="text/javascript" src="js/flexible.js"></script>
+</head>
+<body>
+<div class="flexBar">
+    <img class="tLogo" src="images/logo.png" alt="哥们网H5手游">
+    <aside class="header-aside">
+        <div class="aside-item">
+            <em class="guide-icon-nav">
+                <i></i>
+                <i></i>
+                <i></i>
+            </em>
+        </div>
+    </aside>
+</div><!--end flexNav-->
+<div class="mmask">
+    <div class="leftmeun">
+        <!--未登录-->
+        <div class="toplogin" style="display: none"><a href="/login/"><i></i></a><p><a href="/login/">登录</a></p></div>
+        <!--end -->
+        <!--已登录-->
+        <div class="toplogon">
+            <a href="javascript:;"><i></i></a>
+            <p>15521042144</p>
+            <p class="bindIcon"><em class="bind"></em><em class="bind"></em><em class="bind"></em></p>
+            <!--若已绑定手机号跟实名认证则em标签加个class=‘bind’-->
+        </div>
+        <!--end -->
+        <ul class="cf side-nav">
+            <li><a href="index.html">充值中心  <i><img src="images/i01.png"></i><span></span></a></li>
+            <li><a href="play.html">我玩过的  <i><img src="images/i02.png"></i><span>4</span></a></li>
+            <li><a href="reservation.html">我的预约  <i><img src="images/i03.png"></i><span>0</span></a></li>
+            <li><a href="myGift.html">我的礼包  <i><img src="images/i04.png"></i><span>6</span></a></li>
+            <li><a href="kf.html">联系客服 <i><img src="images/i05.png"></i><span></span></a></li>
+        </ul>
+    </div>
+</div><!--end mmask-->
+<div class="mmaskbox2" style="display: none;"></div>
+
+
+
+<div class="wrap">
+	<div class="h"></div>
+    <div class="regTab">
+        <a class="r1 aOn" href="javascript:void(0)">
+            <i class="iconfont icon-shouji"></i>
+            <var>手机账号</var>
+            <span></span>
+        </a>
+        <a class="r2" href="javascript:void(0)">
+            <i class="iconfont icon-zhanghao00"></i>
+            <var>个性账号</var>
+            <span></span>
+        </a>
+    </div>
+    <div class="regBox">
+        <div class="regCon">
+            <form  method="post" id="reg_phone">
+                <div class="regDiv phoneReg">
+                	<div class="regForm">
+	                    <p class="pWarn"></p>
+	                    <p class="p1 c_phone">
+	                        <label>手&nbsp;机&nbsp;号</label>
+	                        <input class="i" type="text" id="phone" name="phone" placeholder="输入手机号">
+	                    </p>
+	                    <div class="validate">
+	                        <p class="c_vcode">
+	                            <label>短信验证</label>
+	                            <input class="i" type="text" placeholder="输入验证码" name="vcode" id="vcode">
+	                        </p> 
+	                        <button type="button" class="msg-button sendMessage">获取验证码</button>
+	                    </div>
+	                    <p class="p2 c_pwd">
+	                        <label>密&nbsp;&nbsp;&nbsp;码</label>
+	                        <input class="i" type="password" id="password" name="password" placeholder="输入密码">
+	                    </p>
+	                    <p class="p2 c_repeat">
+	                            <label>重复密码</label>
+	                            <input class="i" type="password" id="repeat" name="repeat" placeholder="输入确认密码">
+	                        </p>
+	                    <p class="p1 c_turename">
+	                        <label>真实姓名</label>
+	                        <input class="i" type="text" id="truename" name="truename" placeholder="输入真实姓名">
+	                    </p>
+	                    <p class="p1 c_idcard">
+	                        <label>身份证号</label>
+	                        <input class="i" type="text" id="idcard" name="idcard" placeholder="输入身份证号">
+	                    </p>
+	                    <p class="pCheck">
+	                        <span class="sOn">我已经阅读并同意</span>
+	                        <a class="aX" href="javascript:void(0)">《哥们网用户协议》</a> 
+	                    </p>
+	                    <p class="pBtn">
+	                        <a href="javascript:void(0);" class="doRegisterPhone">立即注册</a>
+	                    </p>
+	                    <div class="pA"><a href="login.html">哥们网账号登录</a></div>
+                    </div>
+                </div>
+            </form>
+            <form  method="post" id="reg_account">
+                <div class="regDiv styleReg">
+                    <div class="regForm">
+                        <p class="pWarn"></p>
+                        <p class="p1 c_account">
+                            <label>账&nbsp;&nbsp;&nbsp;号</label>
+                            <input class="i" type="text" id="account" name="account" placeholder="输入账号">
+                        </p>
+                        <p class="p2 c_pwd">
+                            <label>密&nbsp;&nbsp;&nbsp;码</label>
+                            <input class="i" type="password" id="password" name="password" placeholder="输入密码">
+                        </p>
+                        <p class="p2 c_repeat">
+                            <label>重复密码</label>
+                            <input class="i" type="password" id="repeat" name="repeat" placeholder="输入确认密码">
+                        </p>
+                        <p class="p1 c_turename">
+                            <label>真实姓名</label>
+                            <input class="i" type="text" id="truename" name="truename" placeholder="输入真实姓名">
+                        </p>
+                        <p class="p1 c_idcard">
+                            <label>身份证号</label>
+                            <input class="i" type="text" id="idcard" name="idcard" placeholder="输入身份证号">
+                        </p>
+
+                        <div class="validate">
+                            <p class="c_verify">
+                                <label>验&nbsp;证&nbsp;码</label>
+                                <input class="i" type="text" placeholder="输入验证码" id="verify" name="verify">
+                            </p> 
+                           <img src="http://m.g2.cn/?s=Unlr/verify" id="chaVerify" class="chaVerify">
+                        </div>
+                        <p class="pCheck">
+                            <span class="sOn">我已经阅读并同意</span>
+                            <a class="aX" href="javascript:void(0)">《哥们网用户协议》</a> 
+                        </p>
+                        <p class="pBtn">
+                            <a href="javascript:void(0);" class="doRegisterAccount">立即注册</a>
+                        </p>
+                        <div class="pA"><a href="login.html">哥们网账号登录</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+        
+
+    
+</div>
+
+<div class="protocol">
+
+	<h2>哥们网用户服务协议</h2>
+    <a class="proClose" href="javascript:void(0)">x</a>
+    <div id="prolScroll" class="prolScroll">
+        <div class="proCon">
+            <p><strong>特别说明：</strong>趣游科技集团有限公司为游戏运营企业，在以下条款中简称为“甲方”、“哥们网游平台”；经甲方同意，接受甲方提供的网络服务的个人，为网络游戏用户，以下简称为“乙方”、“用户”。甲、乙双方之间的合约条款由两部分组成：第一部分《文化部网络游戏服务格式化协议必备条款》，第二部分《补充协议》；若第一部分与第二部分内容相互冲突时，以第一部分为准。
+            </p>
+            <h4>第一部分  文化部网络游戏服务格式化协议必备条款</h4>
+            <p>根据《网络游戏管理暂行规定》（文化部令第49号），文化部制定《网络游戏服务格式化协议必备条款》。甲方为网络游戏运营企业，乙方为网络游戏用户。</p>
+
+            <h5>1.账号注册</h5>
+            <p>1.1 乙方承诺以其真实身份注册成为甲方的用户，并保证所提供的个人身份资料信息真实、完整、有效，依据法律规定和必备条款约定对所提供的信息承担相应的法律责任。</p>
+            <p>1.2 乙方以其真实身份注册成为甲方用户后，需要修改所提供的个人身份资料信息的，甲方应当及时、有效地为其提供该项服务。</p>
+            <h5>2.用户账号使用与保管</h5>
+            <p>2.1 根据必备条款的约定，甲方有权审查乙方注册所提供的身份信息是否真实、有效，并应积极地采取技术与管理等合理措施保障用户账号的安全、有效；乙方有义务妥善保管其账号及密码，并正确、安全地使用其账号及密码。任何一方未尽上述义务导致账号密码遗失、账号被盗等情形而给乙方和他人的民事权利造成损害的，应当承担由此产生的法律责任。</p>
+            <p>2.2乙方对登录后所持账号产生的行为依法享有权利和承担责任。</p>
+            <p>2.3 乙方发现其账号或密码被他人非法使用或有使用异常的情况的，应及时根据甲方公布的处理方式通知甲方，并有权通知甲方采取措施暂停该账号的登录和使用。</p>
+            <p>2.4 甲方根据乙方的通知采取措施暂停乙方账号的登录和使用的，甲方应当要求乙方提供并核实与其注册身份信息相一致的个人有效身份信息。</p>
+            <p>2.4.1 甲方核实乙方所提供的个人有效身份信息与所注册的身份信息相一致的，应当及时采取措施暂停乙方账号的登录和使用。</p>
+            <p>2.4.2 甲方违反2.4.1款项的约定，未及时采取措施暂停乙方账号的登录和使用，因此而给乙方造成损失的，应当承担其相应的法律责任。</p>
+            <p>2.4.3 乙方没有提供其个人有效身份证件或者乙方提供的个人有效身份证件与所注册的身份信息不一致的，甲方有权拒绝乙方上述请求。</p>
+            <p>2.5 乙方为了维护其合法权益，向甲方提供与所注册的身份信息相一致的个人有效身份信息时，甲方应当为乙方提供账号注册人证明、原始注册信息等必要的协助和支持，并根据需要向有关行政机关和司法机关提供相关证据信息资料。</p>
+            <h5>3.服务的中止与终止</h5>
+            <p>3.1乙方有发布违法信息、严重违背社会公德、以及其他违反法律禁止性规定的行为，甲方应当立即终止对乙方提供服务。</p>
+            <p>3.2乙方在接受甲方服务时实施不正当行为的，甲方有权终止对乙方提供服务。该不正当行为的具体情形应当在本协议中有明确约定或属于甲方事先明确告知的应被终止服务的禁止性行为，否则，甲方不得终止对乙方提供服务。</p>
+            <p>3.3乙方提供虚假注册身份信息，或实施违反本协议的行为，甲方有权中止对乙方提供全部或部分服务；甲方采取中止措施应当通知乙方并告知中止期间，中止期间应该是合理的，中止期间届满甲方应当及时恢复对乙方的服务。</p>
+            <p>3.4 甲方根据本条约定中止或终止对乙方提供部分或全部服务的，甲方应负举证责任。 </p>
+            <h5>4.用户信息保护</h5>
+            <p>4.1 甲方要求乙方提供与其个人身份有关的信息资料时，应当事先以明确而易见的方式向乙方公开其隐私权保护政策和个人信息利用政策，并采取必要措施保护乙方的个人信息资料的安全。</p>
+            <p>4.2未经乙方许可甲方不得向任何第三方提供、公开或共享乙方注册资料中的姓名、个人有效身份证件号码、联系方式、家庭住址等个人身份信息，但下列情况除外：</p>
+            <p>4.2.1 乙方或乙方监护人授权甲方披露的；</p>
+            <p>4.2.2 有关法律要求甲方披露的；</p>
+            <p>4.2.3 司法机关或行政机关基于法定程序要求甲方提供的；</p>
+            <p>4.2.4 甲方为了维护自己合法权益而向乙方提起诉讼或者仲裁时；</p>
+            <p>4.2.5 应乙方监护人的合法要求而提供乙方个人身份信息时。</p>
+
+            <h4>第二部分      补充协议</h4>
+
+            <h5>1、特别提示</h5>
+            <p>1.1 哥们网游平台同意按照本协议的规定及其不时发布的操作规则提供基于互联网的相关服务(以下称“网络服务”)，为获得网络服务，服务使用人(以下称“用户”)同意本协议的全部条款并按照页面上的提示完成全部的注册程序。用户在进行注册程序过程中点击“同意”按钮即表示用户完全接受本协议项下的全部条款。这些条款可由哥们网游平台随时更新，本服务协议一旦发生变动，哥们网游平台将会在相关的页面上提示修改内容。修改后的服务协议一旦在页面上公布即有效代替原来的服务协议。用户在使用哥们网游平台提供的各项服务之前，应仔细阅读本服务协议，如用户不同意本服务协议及/或随时对其的修改，请停止使用哥们网游平台提供的服务。</p>
+            <h5>2、服务内容</h5>
+            <p>2.1 哥们网游平台网络服务的具体内容由哥们网游平台根据实际情况提供，例如论坛、游戏等。哥们网游平台保留随时变更、中断或终止部分或全部网络服务的权利。</p>
+            <p>2.2 哥们网游平台在提供网络服务时，可能会对部分网络服务(例如网页游戏及其他电信增值服务)的用户收取一定的费用。在此情况下，哥们网游平台会在相关页面上做明确的提示。如用户不同意支付该等费用，则可不接受相关的网络服务。</p>
+            <p>2.3 用户理解：哥们网游平台仅提供相关的网络服务，除此之外与相关网络服务有关的设备(如电脑、调制解调器及其他与接入互联网有关的装置)及所需的费用(如为接入互联网而支付的电话费及上网费)均应由用户自行负担。</p>
+            <p>2.4 用户应使用正版软件接受网络服务。</p>
+            <h5>3、使用规则</h5>
+            <p>3.1 哥们网游平台账号使用权仅属于初始申请注册人，禁止赠与、借用、租用、转让或售卖。如果哥们网游平台发现使用者并非账号初始注册人，哥们网游平台有权在未经通知的情况下回收该账号而无需向该账号使用人承担法律责任，由此带来的包括并不限于用户通讯中断、用户资料和游戏道具等清空等损失由用户自行承担。哥们网游平台禁止用户私下有偿或无偿转让账号，以免因账号问题产生纠纷，用户应当自行承担因违反此要求而遭致的任何损失，同时哥们网游平台保留追究上述行为人法律责任的权利。</p>
+            <p>3.2 用户注册成功后，哥们网游平台将给予每个用户一个用户账号及相应的密码，该用户账号和密码由用户负责保管；用户应当对以其用户账号进行的所有活动和事件负法律责任。</p>
+            <p>3.3 用户同意接受哥们网游平台通过电子邮件或其他方式向用户发送的商品促销或其他相关商业信息。</p>
+            <p>3.4 用户在使用中文网页游戏网络服务过程中，必须遵循以下原则：</p>
+            <p>遵守中国有关的法律和法规；</p>
+            <p>不得为任何非法目的而使用网络服务系统；</p>
+            <p>遵守所有与网络服务有关的网络协议、规定和程序；</p>
+            <p>不得利用哥们网游平台网络服务系统进行任何可能对互联网的正常运转造成不利影响的行为；</p>
+            <p>不得利用哥们网游平台网络服务系统传输任何骚扰性的、中伤他人的、辱骂性的、恐吓性的、庸俗淫秽的或其他任何非法的信息资料；</p>
+            <p>不得利用哥们网游平台网络服务系统或QQ、MSN等其他方式对哥们网游平台（包括哥们网游平台独家运行的各款游戏）进行污蔑或攻击，或在平台上对其他游戏平台进行夸张宣传和恶意拉人等不利于哥们网游平台的行为，或通过对平台进行；</p>
+            <p>不得在线下出售、购买哥们网游平台提供的游戏道具等虚拟资产；</p>
+            <p>不得使用游戏外挂、或利用游戏程序漏洞获取不正当利益、或进行其他破坏游戏平衡的行为；</p>
+            <p>哥们网游平台有权对违反以上规定的用户账号进行终止服务等处理；终止服务后哥们网游平台对用户投入的时间、金钱不予返还或补偿。若终止服务后用户积极改正过错行为，双方协商一致后哥们网游平台可以继续为用户提供服务。</p>
+            <p>就哥们网游平台及合作商业伙伴的服务、产品、业务咨询应采取相应机构提供的沟通渠道，不得在公众场合发布有关哥们网游平台及相关服务的负面宣传。</p>
+            <p>如发现任何非法使用用户账号或账号出现安全漏洞的情况，应立即通告哥们网游平台。</p>
+            <p>3.5 用户使用根据本协议获得的用户账号和密码登录哥们网游平台的网站或接受其他哥们网游平台提供的服务项目时，应遵守该网站或服务项目的相关服务协议及使用守则，用户登录上述网站或接受上述服务项目时即视为对相关服务协议及使用守则的接受。</p>
+            <p>3.6 用户在使用哥们网游平台的服务过程中所产生的任何电磁数据的所属权均属于哥们网游平台。</p>
+            <p>3.7 用户需要自觉遵守哥们网游平台各游戏产品的游戏规则，任何违反游戏规则的行为，用户需要自行承担责任。</p>
+            <p>3.8 用户不得影响其他用户正常使用哥们网游平台的服务，否则哥们网游平台将有权对用户的资料作出及时的处理。</p>
+            <p>3.9 哥们网游平台保留对此部分条款随时增补删除的权利，保留此协议的最终解释权。</p>
+            <h5>4、内容所有权</h5>
+            <p>4.1 哥们网游平台提供的网络服务内容可能包括：文字、软件、声音、图片、录象、图表等。所有这些内容受版权法、商标法和其它财产所有权法律的保护。</p>
+            <p>4.2 用户只有在获得哥们网游平台或其他相关权利人的书面授权之后才能使用这些内容，而不能擅自复制、再造这些内容、或创造与内容有关的派生产品。</p>
+            <h5>5、隐私保护</h5>
+            <p>5.1 保护用户（特别是未成年人）的隐私是哥们网游平台的一项基本政策，因此，若父母（监护人）希望未成年人（尤其是十岁以下子女）得以使用本服务，必须以父母（监护人）名义申请注册，在接受本服务时，应以法定监护人身份加以判断本服务是否符合于未成年人。哥们网游平台保证不对外公开或向第三方 （5.2所列情况除外）提供用户注册资料及用户在使用网络服务时存储在哥们网游平台的非公开内容，但下列情况除外：</p>
+            <p>事先获得用户的明确授权；</p>
+            <p>根据有关的法律法规要求；</p>
+            <p>按照相关政府主管部门的要求；</p>
+            <p>为维护社会公众的利益；</p>
+            <p>为维护哥们网游平台的合法权益。</p>
+            <p>5.2 哥们网游平台可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与哥们网游平台同等的保护用户隐私的责任，则哥们网游平台可将用户的注册资料等提供给该第三方。</p>
+            <p>5.3在不透露单个用户隐私资料的前提下，哥们网游平台有权对整个用户数据库进行技术分析并对已进行分析、整理后的用户数据库进行商业上的利用。 尽管哥们网游平台对用户的隐私权保护做了极大的努力，但是仍然不能保证现有的安全技术措施使用户的技术信息等不受任何形式的损失。</p>
+            <h5>6、免责声明</h5>
+            <p>6.1 哥们网游平台通行证所有者不保证以下事宜：</p>
+            <p>本服务将符合您的要求；</p>
+            <p>本服务将不受干扰、及时提供、安全可靠或不会出错。</p>
+            <p>6.2用户明确同意其使用哥们网游平台网络服务所存在的风险将完全由其自己承担；因其使用哥们网游平台网络服务而产生的一切后果也由其自己承担，哥们网游平台对用户不承担任何责任。</p>
+            <p>6.3除《网络游戏暂行管理办法》第二十二条约定的情形外，用户尚未使用的网络虚拟货币及尚未失效的游戏服务不予折现或退还。</p>
+            <h5>7、服务变更、中断或终止</h5>
+            <p>7.1 如因系统维护或升级的需要而需暂停网络服务，哥们网游平台将尽可能事先进行通告。</p>
+            <p>7.2 如发生下列任何一种情形，哥们网游平台有权随时中止或终止向用户提供本协议项下的网络服务而无需通知用户：</p>
+            <p>用户提供的个人资料不真实；</p>
+            <p>用户违反本协议中规定的使用规则。</p>
+            <p>7.3 除前款所述情形外，哥们网游平台同时保留在不事先通知用户的情况下随时中断或终止部分或全部网络服务的权利，对于所有服务的中断或终止而造成的任何损失，哥们网游平台无需对用户或任何第三方承担任何责任。</p>
+            <h5>8、违约赔偿</h5>
+            <p>8.1 用户同意保障和维护中文网页游戏及其他用户的利益，如因用户违反有关法律、法规或本协议项下的任何条款而给哥们网游平台或任何其他第三人造成损失，用户同意承担由此造成的损害赔偿责任。</p>
+            <h5>9、法律管辖</h5>
+            <p>9.1 本协议的订立、执行和解释及争议的解决均应适用中国法律。</p>
+            <p>9.2 如双方就本协议内容或其执行发生任何争议，双方应尽量友好协商解决；协商不成时，任何一方均应向哥们网游平台所在地的人民法院提起诉讼。</p>
+            <h5>10、通知和送达</h5>
+            <p>10.1 本协议项下所有的通知均可通过重要页面公告、电子邮件或常规的信件传送等方式进行；该等通知于发送之日视为已送达收件人。</p>
+            <h5>11、其他规定</h5>
+            <p>11.1 本协议构成双方对本协议之约定事项及其他有关事宜的完整协议，除本协议规定的之外，未赋予本协议各方其他权利。</p>
+            <p>11.2 如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。</p>
+            <p>11.3 本协议中的标题仅为方便而设，不具法律或契约效果。</p>
+        </div>  
+    </div>
+
+</div>
+
+<div id="alpha"></div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tap.js"></script>
+<script type="text/javascript" src="http://m.g2.cn/Public/Mobile/unlr/js/sname.js"></script>
+<script type="text/javascript" src="http://m.g2.cn/Public/Mobile/unlr/js/iscroll.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+
+    var InterValObj; //timer变量，控制时间  
+    var count = 90; //间隔函数，1秒执行  
+    var curCount;//当前剩余秒数   
+
+    $('body').delegate('.doRegisterPhone', 'click', function(){
+        var $phoneForm = $('#reg_phone');
+        var phone = $phoneForm.find('#phone').val();
+        var vcode = $phoneForm.find('#vcode').val();
+        var password = $phoneForm.find('#password').val();
+        var repeat = $phoneForm.find('#repeat').val();
+        var truename = $phoneForm.find('#truename').val();
+        var idcard = $phoneForm.find('#idcard').val();
+        var check = $phoneForm.find('.pCheck span').attr('class');
+        $phoneForm.find('.c_phone, .c_idcard, .c_pwd, .c_repeat, .c_turename, c_vcode').removeClass('pErr');
+        $phoneForm.find('.pWarn').val('');
+        if (check != 'sOn') {
+            $phoneForm.find('.pWarn').html('请勾选同意《哥们网用户协议》'); return false;
+        } else {
+            if (!phone) {
+                $phoneForm.find('.pWarn').html('请输入手机号'); 
+                $phoneForm.find('.c_phone').addClass('pErr');
+                return false;
+            } else if (!/^0?1[3|4|5|7|8][0-9]\d{8}$/.test(phone)) {
+                $phoneForm.find('.pWarn').html('手机号码有误'); 
+                $phoneForm.find('.c_phone').addClass('pErr');
+                return false;
+            }
+            if (!vcode) {
+                $phoneForm.find('.pWarn').html('请输入手机验证码'); 
+                $phoneForm.find('.c_vcode').addClass('pErr');
+                return false;
+            } else if (vcode.length != 6) {
+                $phoneForm.find('.pWarn').html('验证码错误'); 
+                $phoneForm.find('.c_vcode').addClass('pErr');
+                return false;
+            }
+            if (!password) {
+                $phoneForm.find('.pWarn').html('请输入密码'); 
+                $phoneForm.find('.c_pwd').addClass('pErr');
+                return false;
+            } else if (password.length < 6) {
+                $phoneForm.find('.pWarn').html('输入的密码有误'); 
+                $phoneForm.find('.c_pwd').addClass('pErr');
+                return false;
+            }
+            if (!repeat) {
+                $phoneForm.find('.pWarn').html('请输入确认密码'); 
+                $phoneForm.find('.c_repeat').addClass('pErr');
+                return false;
+            } else if (repeat != password) {
+                $phoneForm.find('.pWarn').html('两次输入密码不一致'); 
+                $phoneForm.find('.c_repeat').addClass('pErr');
+                return false;
+            }
+            if (!truename) {
+                $phoneForm.find('.pWarn').html('请输入真实姓名'); 
+                $phoneForm.find('.c_turename').addClass('pErr');
+                return false;
+            } else if (!truename.match(/^([\u4E00-\u9FA5])*$/)) {
+                $phoneForm.find('.pWarn').html('姓名不能包含特殊字符'); 
+                $phoneForm.find('.c_turename').addClass('pErr');
+                return false;
+            } else if (!(/^[\u0391-\uFFE5]{2,4}$/.test(truename))) {
+                $phoneForm.find('.pWarn').html('输入的姓名有误'); 
+                $phoneForm.find('.c_turename').addClass('pErr');
+                return false;
+            } else {
+                if(surname.indexOf(truename.substr(0,2) + "|")  == -1) {
+                    if(surname.indexOf(truename.substr(0,1) + "|")  == -1) {
+                        $phoneForm.find('.pWarn').html('输入的姓名有误'); 
+                        $phoneForm.find('.c_turename').addClass('pErr');
+                        return false;
+                    }
+                }
+            }
+            if (!idcard) {
+                $phoneForm.find('.pWarn').html('请输入身份证号码'); 
+                $phoneForm.find('.c_idcard').addClass('pErr');
+                return false;
+            } else if (!IsIdCard(idcard)) {
+                $phoneForm.find('.pWarn').html('输入的身份证号码有误'); 
+                $phoneForm.find('.c_idcard').addClass('pErr');
+                return false;
+            }
+
+            $.ajax({
+                type: 'post',
+                url: '/mobile.php?s=/Unlr/register_phone.html',
+                data: $('#reg_phone').serialize(),
+                dataType: 'json',
+                success: function(result) {
+                    $phoneForm.find('.pWarn').html(result.msg); 
+                    if (result.status == 1) {
+                        var regSuc = [];
+                        regSuc.push('<div class="main">');
+                        regSuc.push('   <div class="regSuc">');
+                        regSuc.push('       <div class="sucIco"><img src="/Public/Mobile/unlr/images/regSuc.jpg" alt="" /></div>');
+                        regSuc.push('       <div class="sucTxt">');
+                        regSuc.push('           <h2>恭喜您，注册成功！</h2>');
+                        regSuc.push('           <p class="pName">您的账号为：<span>'+result.account+'</span></p>');
+                        regSuc.push('           <p>此账号可体验哥们网所有游戏！</p>');
+                        regSuc.push('       </div>');
+                        regSuc.push('       <p class="pBtn"><a href="http://m.g2.cn/login/">确 定</a></p>');
+                        regSuc.push('   </div>');
+                        regSuc.push('</div>');
+
+                        $('.wrap').html(regSuc.join(''));
+                    } else {
+                        $('#password, #repeat, #vcode').val('');
+                    }
+                }
+            });
+        }
+
+    }).delegate('#reg_phone .pCheck', 'click', function(){
+        var _class = $(this).find('span').attr('class');
+        if (_class == 'sOn') {
+            $(this).find('span').removeClass('sOn');
+        } else {
+            $(this).find('span').addClass('sOn');
+        }
+    }).delegate('.sendMessage', 'click', function(){
+        var $phoneForm = $('#reg_phone');
+        var phone = $('#reg_phone').find('#phone').val();
+        if (!phone) {
+            $phoneForm.find('.pWarn').html('请输入手机号'); 
+            $phoneForm.find('.c_phone').addClass('pErr');
+            return false;
+        } else if (!/^0?1[3|4|5|7|8][0-9]\d{8}$/.test(phone)) {
+            $phoneForm.find('.pWarn').html('手机号码有误'); 
+            $phoneForm.find('.c_phone').addClass('pErr');
+            return false;
+        } else {
+            $phoneForm.find('.pWarn').html(''); 
+            $phoneForm.find('.c_phone').removeClass('pErr');
+        }
+
+        curCount = count;
+        $.ajax({
+            type: 'post',
+            url: '/mobile.php?s=/Unlr/telsafecode.html',
+            data: {'phone': phone},
+            dataType: 'json',
+            success: function(result) {
+                if (result.status == 1) {
+                    $('.sendMessage').attr('disabled', "true");
+                    $('.sendMessage').html(curCount + '秒后重发');
+                    InterValObj = window.setInterval(SetRemainTime, 1000);
+                } else {
+                    $phoneForm.find('.pWarn').html('验证码发送失败'); 
+                    return false;
+                }
+            }
+        })
+    }).delegate('.doRegisterAccount', 'click', function(){
+        var $accountForm = $('#reg_account');
+        var account = $accountForm.find('#account').val();
+        var verify = $accountForm.find('#verify').val();
+        var password = $accountForm.find('#password').val();
+        var repeat = $accountForm.find('#repeat').val();
+        var truename = $accountForm.find('#truename').val();
+        var idcard = $accountForm.find('#idcard').val();
+        var check = $accountForm.find('.pCheck span').attr('class');
+        $accountForm.find('.c_account, .c_idcard, .c_pwd, .c_repeat, .c_turename, c_verify').removeClass('pErr');
+        $accountForm.find('.pWarn').val('');
+
+        if (check != 'sOn') {
+            $accountForm.find('.pWarn').html('请勾选同意《哥们网用户协议》'); return false;
+        } else {
+            if (!account) {
+                $accountForm.find('.pWarn').html('请输入账号'); 
+                $accountForm.find('.c_account').addClass('pErr');
+                return false;
+            } else {
+                if (/^[a-z_][a-z_0-9]*/i.test(account)) {
+                    if (account.length > 20 || account.length < 3) {
+                        $accountForm.find('.pWarn').html('您输入的账号有误！'); 
+                        $accountForm.find('.c_account').addClass('pErr');
+                        return false;
+                    } 
+                } else if (!/^0?1[3|4|5|7|8][0-9]\d{8}$/.test(account)) {
+                    $accountForm.find('.pWarn').html('您输入的账号有误！'); 
+                    $accountForm.find('.c_account').addClass('pErr');
+                    return false;
+                }
+            }
+            
+            if (!password) {
+                $accountForm.find('.pWarn').html('请输入密码'); 
+                $accountForm.find('.c_pwd').addClass('pErr');
+                return false;
+            } else if (password.length < 6) {
+                $accountForm.find('.pWarn').html('输入的密码有误'); 
+                $accountForm.find('.c_pwd').addClass('pErr');
+                return false;
+            }
+            if (!repeat) {
+                $accountForm.find('.pWarn').html('请输入确认密码'); 
+                $accountForm.find('.c_repeat').addClass('pErr');
+                return false;
+            } else if (repeat != password) {
+                $accountForm.find('.pWarn').html('两次输入密码不一致'); 
+                $accountForm.find('.c_repeat').addClass('pErr');
+                return false;
+            }
+            if (!truename) {
+                $accountForm.find('.pWarn').html('请输入真实姓名'); 
+                $accountForm.find('.c_turename').addClass('pErr');
+                return false;
+            } else if (!truename.match(/^([\u4E00-\u9FA5])*$/)) {
+                $accountForm.find('.pWarn').html('姓名不能包含特殊字符'); 
+                $accountForm.find('.c_turename').addClass('pErr');
+                return false;
+            } else if (!(/^[\u0391-\uFFE5]{2,4}$/.test(truename))) {
+                $accountForm.find('.pWarn').html('输入的姓名有误'); 
+                $accountForm.find('.c_turename').addClass('pErr');
+                return false;
+            } else {
+                if(surname.indexOf(truename.substr(0,2) + "|")  == -1) {
+                    if(surname.indexOf(truename.substr(0,1) + "|")  == -1) {
+                        $accountForm.find('.pWarn').html('输入的姓名有误'); 
+                        $accountForm.find('.c_turename').addClass('pErr');
+                        return false;
+                    }
+                }
+            }
+            if (!idcard) {
+                $accountForm.find('.pWarn').html('请输入身份证号码'); 
+                $accountForm.find('.c_idcard').addClass('pErr');
+                return false;
+            } else if (!IsIdCard(idcard)) {
+                $accountForm.find('.pWarn').html('输入的身份证号码有误'); 
+                $accountForm.find('.c_idcard').addClass('pErr');
+                return false;
+            }
+            if (!verify) {
+                $accountForm.find('.pWarn').html('请输入验证码'); 
+                $accountForm.find('.c_verify').addClass('pErr');
+                return false;
+            } else if (verify.length != 4) {
+                $accountForm.find('.pWarn').html('验证码错误'); 
+                $accountForm.find('.c_verify').addClass('pErr');
+                return false;
+            }
+            $.ajax({
+                type: 'post',
+                url: '/mobile.php?s=/Unlr/register_account.html',
+                data: $('#reg_account').serialize(),
+                dataType: 'json',
+                success: function(result) {
+                    $accountForm.find('.pWarn').html(result.msg); 
+                    $('#chaVerify').click();
+                    if (result.status == 1) {
+                        // 注册成功
+                        var regSuc = [];
+                        regSuc.push('<div class="main">');
+                        regSuc.push('   <div class="regSuc">');
+                        regSuc.push('       <div class="sucIco"><img src="/Public/Mobile/unlr/images/regSuc.jpg" alt="" /></div>');
+                        regSuc.push('       <div class="sucTxt">');
+                        regSuc.push('           <h2>恭喜您，注册成功！</h2>');
+                        regSuc.push('           <p class="pName">您的账号为：<span>'+result.account+'</span></p>');
+                        regSuc.push('           <p>此账号可体验哥们网所有游戏！</p>');
+                        regSuc.push('       </div>');
+                        regSuc.push('       <p class="pBtn"><a href="http://m.g2.cn/login/">确 定</a></p>');
+                        regSuc.push('   </div>');
+                        regSuc.push('</div>');
+
+                        $('.wrap').html(regSuc.join(''));
+                    } else {
+                        $('#password, #repeat, #verify').val('');
+                    }
+                }
+            })
+        }
+    }).delegate('#chaVerify', 'click', function() {
+        var Url = $(this).attr('src');
+        var _Url = Url.replace(/((\.html)?|(\/t\/.+)?)$/g,'');
+        $(this).attr('src', _Url+'/t/'+(new Date()).getTime()+'.html');
+        return false;
+    }).delegate('#reg_account .pCheck', 'click', function(){
+        var _class = $(this).find('span').attr('class');
+        if (_class == 'sOn') {
+            $(this).find('span').removeClass('sOn');
+        } else {
+            $(this).find('span').addClass('sOn');
+        }
+    });
+
+    //timer处理函数  
+    function SetRemainTime() {  
+        if (curCount == 0) {                  
+            window.clearInterval(InterValObj);//停止计时器  
+            $(".sendMessage").removeAttr("disabled");//启用按钮  
+            $(".sendMessage").html("重新发送验证码");  
+        } else {  
+            curCount--;  
+            $(".sendMessage").html("" + curCount + "秒后重发");  
+        }  
+    }
+
+    $('body input').click(function(){
+        $(this).parent().removeClass('pErr');
+        $('.pWarn').html('');
+        return false;
+    })
+</script>
+
+<section style="display: none;">
+	<div class="gTan">
+		<h3 class="title">
+			<span></span>
+			验证
+			<a class="close" href="javascript:void(0)"></a>
+		</h3>
+		<p class="warn">错误提示</p>
+		<p class="p3">
+			<input class="i" type="text" name="verify" id="verify" placeholder="输入验证码">
+			<img src="http://m.g2.cn/?s=Unlr/verify" id="chaVerify">
+		</p>
+		<p class="btn">
+			<a href="javascript:void(0);" class="doLogin">确 定</a>
+		</p>
+	</div>
+</section>
+
+</body>
+</html>
