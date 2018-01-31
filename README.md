@@ -2,4 +2,10 @@
 
 注：备份官网项目平台，采用的是传统的模式开发。之后会改为vue框架
 
+线上项目链接：[example link](http://h5.g2.cn)
+
+##### vue版本详见
+
+vue项目链接：[example link](https://github.com/yufengji/g2_h5).
+
 
